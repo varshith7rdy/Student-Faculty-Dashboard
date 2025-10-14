@@ -20,9 +20,12 @@ async function login(req, res) {
         const text1 = 'select * from accounts where password = ($1)'
         const value1 = await pool.query(text1, [hashedPassword])
         console.log(value1.rowCount);
-        res
-        .status(200)
-        .send(`${name} has successfully logged in!!`)
+        if(!value1.rowCount){
+            res.status(400).send(`Incorrect Password`)
+        }
+        else{
+            res.status(200).send("Successful Login attempt")
+        }
     }
 }
 
