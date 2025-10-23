@@ -5,9 +5,9 @@ import { get } from "http";
 import { router1 } from "./backend/routes/students.route.js"
 import { router2 } from "./backend/routes/faculty.route.js"
 import { pool } from "./backend/db/index.js";
-import { ensureStudentTable } from "./backend/drizzle/studentProfile.js";
-import { ensureMarksTable } from "./backend/drizzle/marks.js";
-import { ensureloginsTable } from "./backend/drizzle/accounts.js"
+import { ensureStudentTable } from "./backend/schema/studentProfile.js";
+import { ensureMarksTable } from "./backend/schema/marks.js";
+import { ensureloginsTable } from "./backend/schema/accounts.js"
 import { logger, authenticationM } from "./backend/middlewares/auth.middleware.js"
 import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
