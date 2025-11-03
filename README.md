@@ -1,3 +1,1 @@
-# Student-Faculty-Dashboard
-
-A unified platform for the students of SNIST to manage their academics, get details.(Still working)
+This is my new README content.
