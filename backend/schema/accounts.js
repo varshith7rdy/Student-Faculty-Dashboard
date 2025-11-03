@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS accounts (
   email varchar(255) UNIQUE NOT NULL,
   password text NOT NULL,
   salt text NOT NULL,
-  name varachar(255) NOT NULL
+  name varchar(255) NOT NULL
 );
 `;
 

@@ -1,5 +1,5 @@
 .env
+scripts
 node_modules
 script.js
-package-lock.json
 docker-compose.yml
