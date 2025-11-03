@@ -2,14 +2,13 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { get } from "http";
-import { router1 } from "./backend/routes/students.route.js"
-import { router2 } from "./backend/routes/faculty.route.js"
-import { pool } from "./backend/db/index.js";
-import { ensureStudentTable } from "./backend/drizzle/studentProfile.js";
-import { ensureMarksTable } from "./backend/drizzle/marks.js";
-import { ensureloginsTable } from "./backend/drizzle/accounts.js"
-import { logger, authenticationM } from "./backend/middlewares/auth.middleware.js"
-import jwt from "jsonwebtoken"
+import { router1 } from "./routes/students.route.js"
+import { router2 } from "./routes/faculty.route.js"
+import { pool } from "./db/index.js";
+import { ensureStudentTable } from "./schema/studentProfile.js";
+import { ensureMarksTable } from "./schema/marks.js";
+import { ensureloginsTable } from "./schema/accounts.js"
+import { logger, authenticationM } from "./middlewares/auth.middleware.js"
 import dotenv from "dotenv"
 import cors from "cors"
 
